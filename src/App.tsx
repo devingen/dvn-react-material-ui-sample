@@ -148,6 +148,14 @@ class App extends React.Component {
             console.log(data);
           }}
           submitButtonLabel={"Send"}
+          extraButtons={[{
+            label: 'Secondary',
+            onClick: () => {
+              // tslint:disable
+              console.log(1);
+            },
+            loading: false,
+          }]}
         />
       </div>
     );

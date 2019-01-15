@@ -1,4 +1,6 @@
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+// import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
+// import getMuiTheme from 'material-ui/styles/getMuiTheme';
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
@@ -88,10 +90,11 @@ const appTheme = {
   },
 };
 
-const theme = createMuiTheme(appTheme);
+// tslint:disable
+console.log(appTheme);
 
 ReactDOM.render(
-  <MuiThemeProvider theme={theme}><App/></MuiThemeProvider>,
+  <App/>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
